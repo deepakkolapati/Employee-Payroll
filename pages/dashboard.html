@@ -1,13 +1,11 @@
 <!DOCTYPE HTML>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Employee Payroll</title>
     <link rel="stylesheet" href="/style/dashboard.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
@@ -27,23 +25,83 @@
                         <i class="ri-search-line"></i>
                     </div>
                     <a href="http://127.0.0.1:5502/pages/index.html">
-                    <p class="user">+ Add User</p></a>
+                        <p class="user">+ Add User</p>
+                    </a>
                 </div>
             </div>
             <div class="box d-flex flex-column justify-content-center text-start">
-                    <table class="table" id="table">
-                        <thead class="table1">
-                            <th>NAME</th>
-                            <th>GENDER</th>
-                            <th>DEPARTMENT</th>
-                            <th>SALARY</th>
-                            <th>STARTDATE</th>
-                            <th>ACTIONS</th>
-                        </thead>
-                    </table>
-                </div>
+                <table class="table" id="table">
+                    <thead class="table1">
+                        <th>NAME</th>
+                        <th>GENDER</th>
+                        <th>DEPARTMENT</th>
+                        <th>SALARY</th>
+                        <th>STARTDATE</th>
+                        <th>ACTIONS</th>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Your existing rows -->
+                        <!-- New rows -->
+                        <tr>
+                            <td>James Brown</td>
+                            <td>Male</td>
+                            <td>Finance</td>
+                            <td>$70,000</td>
+                            <td>2024-03-16</td>
+                            <td>
+                                <button class="button edit-button"><i class="ri-pencil-line"></i>Edit</button>
+                                <button class="button delete-button"><i class="ri-delete-bin-line"></i>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Emily Johnson</td>
+                            <td>Female</td>
+                            <td>Marketing</td>
+                            <td>$65,000</td>
+                            <td>2024-03-17</td>
+                            <td>
+                                <button class="button edit-button"><i class="ri-pencil-line"></i>Edit</button>
+                                <button class="button delete-button"><i class="ri-delete-bin-line"></i>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Michael Wilson</td>
+                            <td>Male</td>
+                            <td>IT</td>
+                            <td>$75,000</td>
+                            <td>2024-03-18</td>
+                            <td>
+                                <button class="button edit-button"><i class="ri-pencil-line"></i>Edit</button>
+                                <button class="button delete-button"><i class="ri-delete-bin-line"></i>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Olivia Martinez</td>
+                            <td>Female</td>
+                            <td>Sales</td>
+                            <td>$68,000</td>
+                            <td>2024-03-19</td>
+                            <td>
+                                <button class="button edit-button"><i class="ri-pencil-line"></i>Edit</button>
+                                <button class="button delete-button"><i class="ri-delete-bin-line"></i>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>William Lee</td>
+                            <td>Male</td>
+                            <td>Customer Service</td>
+                            <td>$62,000</td>
+                            <td>2024-03-20</td>
+                            <td>
+                                <button class="button edit-button"><i class="ri-pencil-line"></i>Edit</button>
+                                <button class="button delete-button"><i class="ri-delete-bin-line"></i>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
     <!-- <script src="/scripts/dashboard.js"></script> -->
 </body>
+</html>
