@@ -20,14 +20,9 @@ $(document).ready(function() {
 
         alert("Form submitted successfully!");
     });
+});
 
-
-
-
-
-
-
-    on to retrieve form data and create an object
+// Function to retrieve form data and create an object
 function getFormData() {
     const name = document.getElementById("name").value;
     let profile = "";
