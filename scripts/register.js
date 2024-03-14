@@ -21,50 +21,42 @@ $(document).ready(function() {
         alert("Form submitted successfully!");
     });
 });
-
-// Function to retrieve form data and create an object
-function getFormData() {
+document.getElementById("submit").addEventListener("click", function() {
     const name = document.getElementById("name").value;
-    let profile = "";
-    const profileRadios = document.querySelectorAll('input[name="profile"]');
-    profileRadios.forEach(radio => {
-        if (radio.checked) {
-            profile = radio.nextElementSibling.getAttribute("alt");
-        }
-    });
-    const gender = document.querySelector('input[name="gender"]:checked').value;
-    const departments = [];
-    const deptCheckboxes = document.querySelectorAll('input[name="dept"]');
-    deptCheckboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            departments.push(checkbox.nextSibling.textContent.trim());
-        }
-    });
-    const salary = document.getElementById("salary").value;
-    const startDate = document.getElementById("date").value;
     const notes = document.getElementById("notes").value;
+    const date = document.getElementById("date").value;
+    const gender = document.getElementById("male").checked ? "male" : "female";
+    const salary = document.getElementById("salary").value;
 
-    // Create and return the object
-    const formData = {
-        name: name,
-        profile: profile,
-        gender: gender,
-        departments: departments,
-        salary: salary,
-        startDate: startDate,
-        notes: notes
+    const departments = [];
+    if (document.getElementById("dept1").checked) {
+        departments.push("HR");
+    }
+    if (document.getElementById("dept2").checked) {
+        departments.push("Sales");
+    }
+    if (document.getElementById("dept3").checked) {
+        departments.push("Finance");
+    }
+    if (document.getElementById("dept4").checked) {
+        departments.push("Engineer");
+    }
+    if (document.getElementById("dept5").checked) {
+        departments.push("Others");
+    }
+
+ 
+    const employeeData = {
+        Name: name,
+        Notes: notes,
+        Gender: gender,
+        Department: departments,
+        Salary: salary,
+        Start_Date: date
     };
 
-    return formData;
-}
-
-// Function to print object to console
-function printObject(obj) {
-    console.log(obj);
-}
-
-// Get form data when submit button is clicked
-document.getElementById("submit").addEventListener("click", function() {
-    const formData = getFormData();
-    printObject(formData);
+  
+  
+    console.log(employeeData);
 });
+
