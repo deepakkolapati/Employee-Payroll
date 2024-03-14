@@ -90,66 +90,24 @@
     color: white;
     background-color: #3d3d3d;
 }
-.names1{
-    padding-left: 5%;
-}
-.names{
-    padding-left: 2%;
-}
-.details{
-    padding-left: 4%;
-}
-.sal {
-    padding-left: 7%;
-}
-.date {
-    padding-left: 11%;
-}
-.details1{
-    padding-left: 11.5%;
-}
-.action {
-    padding-left: 12%;
-}
-.dept {
-    padding-left: 11%;
-}
-.button{
-    background-color: #E9FEA5;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    color: black;
-    height: 19px;
-    width: 70px;
-    border-radius: 19px;
-    padding: 5px;
-}
 
-.button1{
-    background-color: #E9FEA5;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    color: black;
-    height: 19px;
-    width: 40px;
-    border-radius: 19px;
-    padding: 5px;
-}
 
-.button2{
+button{
     background-color: #E9FEA5;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     color: black;
-    height: 19px;
-    width: 50px;
-    border-radius: 19px;
-    padding: 5px;
+    height: 32px;
+    width: 80px;
+    border-radius: 500px;
+    /* padding: 5px; */
 }
 
 .delete:hover {
-    background-color: #000000;
+    background-color: grey;
+}
+
+.edit:hover {
+    background-color: grey;
 }
