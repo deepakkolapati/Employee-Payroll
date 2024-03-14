@@ -27,6 +27,7 @@ document.getElementById("submit").addEventListener("click", function() {
     const date = document.getElementById("date").value;
     const gender = document.getElementById("male").checked ? "male" : "female";
     const salary = document.getElementById("salary").value;
+    const image = $('input[name="profile"]:checked').val();
 
     const departments = [];
     if (document.getElementById("dept1").checked) {
@@ -46,7 +47,8 @@ document.getElementById("submit").addEventListener("click", function() {
     }
 
  
-    const employeeData = {
+    var employeeData = {
+        profile: image,
         Name: name,
         Notes: notes,
         Gender: gender,
@@ -54,6 +56,14 @@ document.getElementById("submit").addEventListener("click", function() {
         Salary: salary,
         Start_Date: date
     };
+
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/user',
+        data: JSON.stringify(employeeData),
+        contentType: 'application/json',
+
+    });
 
   
   

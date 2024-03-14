@@ -1,0 +1,17 @@
+{
+  "user": [
+    {
+      "id": "8438",
+      "profile": "https://i.ibb.co/fqkrR0k/kilua.jpg",
+      "Name": "Deepak",
+      "Notes": "he is a software engineer",
+      "Gender": "male",
+      "Department": [
+        "Finance",
+        "Engineer"
+      ],
+      "Salary": "50k",
+      "Start_Date": "2024-03-13"
+    }
+  ]
+}

@@ -24,7 +24,7 @@
                     <div class="icon d-flex flex-row justify-content-center text-start">
                         <i class="ri-search-line"></i>
                     </div>
-                    <a href="http://127.0.0.1:5502/pages/index.html">
+                    <a href="http://127.0.0.1:5500/pages/register.html">
                         <p class="user">+ Add User</p>
                     </a>
                 </div>
@@ -32,6 +32,7 @@
             <div class="box d-flex flex-column justify-content-center text-start">
                 <table class="table" id="table">
                     <thead class="table1">
+                        <th>image</th>
                         <th>NAME</th>
                         <th>GENDER</th>
                         <th>DEPARTMENT</th>
@@ -39,69 +40,11 @@
                         <th>STARTDATE</th>
                         <th>ACTIONS</th>
                     </thead>
-                    <tbody id="table-body">
-                        <!-- Your existing rows -->
-                        <!-- New rows -->
-                        <tr>
-                            <td>James Brown</td>
-                            <td>Male</td>
-                            <td>Finance</td>
-                            <td>$70,000</td>
-                            <td>2024-03-16</td>
-                            <td>
-                                <button class="edit"><i class="ri-pencil-line"></i>Edit</button>
-                                <button class="delete"><i class="ri-delete-bin-line"></i>Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Emily Johnson</td>
-                            <td>Female</td>
-                            <td>Marketing</td>
-                            <td>$65,000</td>
-                            <td>2024-03-17</td>
-                            <td>
-                                <button class="edit"><i class="ri-pencil-line"></i>Edit</button>
-                                <button class="delete"><i class="ri-delete-bin-line"></i>Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Michael Wilson</td>
-                            <td>Male</td>
-                            <td>IT</td>
-                            <td>$75,000</td>
-                            <td>2024-03-18</td>
-                            <td>
-                                <button class="edit"><i class="ri-pencil-line"></i>Edit</button>
-                                <button class="delete"><i class="ri-delete-bin-line"></i>Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Olivia Martinez</td>
-                            <td>Female</td>
-                            <td>Sales</td>
-                            <td>$68,000</td>
-                            <td>2024-03-19</td>
-                            <td>
-                                <button class="edit"><i class="ri-pencil-line"></i>Edit</button>
-                                <button class="delete"><i class="ri-delete-bin-line"></i>Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>William Lee</td>
-                            <td>Male</td>
-                            <td>Customer Service</td>
-                            <td>$62,000</td>
-                            <td>2024-03-20</td>
-                            <td>
-                                <button class="edit"><i class="ri-pencil-line"></i>Edit</button>
-                                <button class="delete"><i class="ri-delete-bin-line"></i>Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tbody id="employeeData"></tbody>
                 </table>
             </div>
         </div>
     </div>
-    <script src="/scripts/register.js"></script>
+    <script src="/scripts/dashboard.js"></script>
 </body>
 </html>
