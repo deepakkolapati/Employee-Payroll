@@ -5,46 +5,45 @@
 }
 
 .header {
-    padding: 10px 20px; /* Adjust padding */
+    padding: 10px 50px 10px;
     display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items: center;
-}
-
-.header img {
-    margin-right: 10px; /* Add spacing between logo and text */
-}
-
-.header p {
-    margin-top: 5px; /* Adjust spacing */
 }
 
 .header1 {
     color: #82A70C;
 }
 
+#data {
+    color: darkgreen;
+}
+
 .main {
     background-color: #f4f4f4;
-    padding: 10px 20px 100px 20px;
+    padding: 10px 50px 100px 50px;
+    align-items: center;
 }
 
 .emp {
     width: 100%;
-    max-width: 800px;
+    max-width: 540px;
     background: #fff;
-    margin: 50px auto 20px;
-    padding: 30px;
+    margin: 100px auto 20px;
+    padding: 0px 30px 50px 20px;
     border-radius: 5px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transform-origin: top;
+    zoom: 1.05;
 }
 
 #username {
-    display: inline-block; /* Adjust input and label to be on the same line */
-    margin-right: 10px; /* Add spacing between label and input */
+    box-sizing: border-box;
+    padding-right: 60px;
+    /*float: left; */
 }
 
 #name {
-    width: calc(100% - 80px); /* Adjust width of input */
+    width: 350px;
 }
 
 #pi {
@@ -55,8 +54,10 @@
     padding-right: 49px;
 }
 
+
 .dept {
     padding-right: 21px;
+    
 }
 
 .salary {
@@ -74,19 +75,26 @@
 }
 
 #notes {
-    width: calc(100% - 60px);
-    height: 100px;
+    width: 350px;
+    height: 75px;
 }
+
 
 .buttons {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    padding: 5px;
 }
 
-#submit,
-#reset,
+#submit {
+    margin-left: 250px;
+    padding: 5px;
+}
+
+#reset {
+    margin-left: 10px;
+    padding: 5px;
+}
+
 #cancel {
-    padding: 10px 20px;
-    margin: 0 10px;
+    padding: 5px;
 }
