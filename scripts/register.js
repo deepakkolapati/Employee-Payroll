@@ -34,7 +34,7 @@ function getFormData() {
     });
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const departments = [];
-    const deptCheckboxes = document.querySelectorAll('input[name^="dept"]');
+    const deptCheckboxes = document.querySelectorAll('input[name="dept"]');
     deptCheckboxes.forEach(checkbox => {
         if (checkbox.checked) {
             departments.push(checkbox.nextSibling.textContent.trim());
