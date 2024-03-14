@@ -1,20 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.header {
-    padding: 10px 50px 10px;
-    display: flex;
-}
+
+
 
 .header1 {
     color: #82A70C;
 }
 
+#note {
+    padding-right: 60px;
+    position: relative;
+    bottom: 25px;
+}
+
+
 #data {
     color: darkgreen;
+}
+
+.dept {
+    padding-right: 21px;
+    
+}
+
+
+#pi {
+    padding-right: 10px;
+}
+
+
+#reset {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#cancel {
+    padding: 5px;
 }
 
 .main {
@@ -28,7 +48,7 @@
     max-width: 540px;
     background: #fff;
     margin: 100px auto 20px;
-    padding: 0px 30px 50px 20px;
+    padding: 30px 30px 50px 20px;
     border-radius: 5px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -42,23 +62,22 @@
     /*float: left; */
 }
 
-#name {
-    width: 350px;
-}
-
-#pi {
-    padding-right: 10px;
-}
-
 .gender {
     padding-right: 49px;
 }
 
-
-.dept {
-    padding-right: 21px;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+#name {
+    width: 350px;
+}
+
+
+
 
 .salary {
     padding-right: 55px;
@@ -68,17 +87,16 @@
     padding-right: 32px;
 }
 
-#note {
-    padding-right: 60px;
-    position: relative;
-    bottom: 25px;
-}
 
 #notes {
     width: 350px;
     height: 75px;
 }
 
+.header {
+    padding: 10px 50px 10px;
+    display: flex;
+}
 
 .buttons {
     display: flex;
@@ -90,11 +108,3 @@
     padding: 5px;
 }
 
-#reset {
-    margin-left: 10px;
-    padding: 5px;
-}
-
-#cancel {
-    padding: 5px;
-}
