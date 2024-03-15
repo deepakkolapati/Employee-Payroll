@@ -12,6 +12,42 @@
       ],
       "Salary": "50k",
       "Start_Date": "2024-03-13"
+    },
+    {
+      "id": "06c2",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaVKbSa1QadC1GsXFwQML4kK6JxihiQ4_2n602HKUnQ&s",
+      "Name": "Joshi",
+      "Notes": "he is joshi",
+      "Gender": "male",
+      "Department": [
+        "HR"
+      ],
+      "Salary": "60k",
+      "Start_Date": "2024-03-12"
+    },
+    {
+      "id": "9092",
+      "profile": "https://i.ibb.co/fqkrR0k/kilua.jpg",
+      "Name": "deepak",
+      "Notes": "fvm",
+      "Gender": "male",
+      "Department": [
+        "Finance"
+      ],
+      "Salary": "30k",
+      "Start_Date": "2024-03-05"
+    },
+    {
+      "id": "cacb",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJIVAovygeD6z08kn_Rl4fY9vKjJ_Re8ExMeoNZ6yQQ&s",
+      "Name": "yash",
+      "Notes": "ndfs",
+      "Gender": "female",
+      "Department": [
+        "Finance"
+      ],
+      "Salary": "30k",
+      "Start_Date": "2024-03-13"
     }
   ]
 }

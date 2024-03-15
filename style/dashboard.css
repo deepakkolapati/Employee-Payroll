@@ -98,10 +98,12 @@ button{
     flex-direction: row; */
     color: black;
     height: 32px;
-    width: 80px;
+    width: 50px;
     border-radius: 500px;
     /* padding: 5px; */
+
 }
+
 
 .delete:hover {
     background-color: grey;
@@ -109,4 +111,14 @@ button{
 
 .edit:hover {
     background-color: grey;
+}
+
+.deletebutton{
+    background: transparent;
+    border:transparent;
+}
+
+.edits{
+    background: transparent;
+    border:transparent;
 }

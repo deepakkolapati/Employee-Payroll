@@ -106,5 +106,12 @@
 #submit {
     margin-left: 250px;
     padding: 5px;
+    background-color:rgb(124, 221, 124);
 }
 
+#resetb{
+    background-color: rgb(225, 131, 131);
+    width:50px;
+    margin-left:10px;
+    
+}

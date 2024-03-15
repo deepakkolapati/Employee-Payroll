@@ -70,3 +70,7 @@ document.getElementById("submit").addEventListener("click", function() {
     console.log(employeeData);
 });
 
+document.getElementById('resetb').addEventListener('click',function(){
+ document.getElementById('empform').reset() }
+
+);
