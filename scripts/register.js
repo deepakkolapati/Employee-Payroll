@@ -117,3 +117,26 @@ $(document).ready(function() {
         $('#submit').text('Submit'); // Reset submit button text
     });
 });
+
+
+function redirect() {
+    window.location.href = '/pages/dashboard.html';
+}
+
+function resetForm() {
+    // Reset input field values
+    document.getElementById('name').value = '';
+    document.getElementById('profile1').checked = false;
+    document.getElementById('profile2').checked = false;
+    document.getElementById('profile3').checked = false;
+    document.getElementById('profile4').checked = false;
+    document.getElementById('male').checked = false;
+    document.getElementById('female').checked = false;
+    document.getElementById('dept1').checked = false;
+    document.getElementById('dept2').checked = false;
+    document.getElementById('dept3').checked = false;
+    document.getElementById('dept4').checked = false;
+    document.getElementById('dept5').checked = false;
+    document.getElementById('salary').selectedIndex = 0;
+    document.getElementById('date').value = '';
+    document.getElementById('notes').value = ''; }
