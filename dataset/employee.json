@@ -61,16 +61,29 @@
       "Start_Date": "2024-03-12"
     },
     {
-      "id": "4507",
       "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNnKAIHy-tNtoCdJDhEBAlvt5JDSpIkTfZbHKxuT8-6g&s",
       "Name": "sharwan",
       "Notes": "rer3",
       "Gender": "male",
       "Department": [
-        "HR"
+        "HR",
+        "Engineer"
       ],
-      "Salary": "30k",
-      "Start_Date": "2024-03-14"
+      "Salary": "60k",
+      "Start_Date": "2024-03-14",
+      "id": "4507"
+    },
+    {
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaVKbSa1QadC1GsXFwQML4kK6JxihiQ4_2n602HKUnQ&s",
+      "Name": "vivek",
+      "Notes": "bfvne",
+      "Gender": "male",
+      "Department": [
+        "Finance"
+      ],
+      "Salary": "50k",
+      "Start_Date": "2024-03-06",
+      "id": "2cc6"
     }
   ]
 }

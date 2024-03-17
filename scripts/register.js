@@ -103,7 +103,7 @@ $(document).ready(function() {
             contentType: 'application/json',
             success: function(response) {
                 alert('User saved successfully!');
-                window.location.href = 'dashboard.html'; // Redirect after successful submission
+                window.location.href = '/pages/dashboard.html'; // Redirect after successful submission
             },
             error: function(xhr, status, error) {
                 console.error('Error saving user:', xhr.responseText);
