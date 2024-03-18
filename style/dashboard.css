@@ -116,9 +116,11 @@ button{
 .deletebutton{
     background: transparent;
     border:transparent;
+    color:tomato;
 }
 
 .edits{
     background: transparent;
     border:transparent;
+    color:darkslategray ;
 }

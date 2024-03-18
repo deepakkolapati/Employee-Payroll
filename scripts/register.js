@@ -27,8 +27,13 @@ $(document).ready(function() {
             }
         });
 
-        // Change submit button text to "Update"
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('id');
+    
+    if (userId) {
         $('#submit').text('Update');
+    }
+
     }
 
     if (userId) {
@@ -58,28 +63,21 @@ $(document).ready(function() {
             return;
         }
 
-        alert("Form submitted successfully!");
+        // alert("Form submitted successfully!");
 
         // Additional code for submitting form data via AJAX
         const gender = $('input[name="gender"]:checked').val();
         const salary = $('#salary').val();
         const image = $('input[name="profile"]:checked').val();
         const departments = [];
-        if (document.getElementById("dept1").checked) {
-            departments.push("HR");
-        }
-        if (document.getElementById("dept2").checked) {
-            departments.push("Sales");
-        }
-        if (document.getElementById("dept3").checked) {
-            departments.push("Finance");
-        }
-        if (document.getElementById("dept4").checked) {
-            departments.push("Engineer");
-        }
-        if (document.getElementById("dept5").checked) {
-            departments.push("Others");
-        }
+
+        let dept =document.querySelectorAll("[name=dept]")
+        // console.log(dept);
+        dept.forEach(item => {
+            if (item.checked) {
+                departments.push(item.value);
+            }
+        })
     
 
         const employeeData = {
@@ -91,7 +89,7 @@ $(document).ready(function() {
             Salary: salary,
             Start_Date: $('#date').val()
         };
-
+        
         // Adjust AJAX URL based on edit or create mode
         const method = userId ? 'PUT' : 'POST';
         const url = userId ? `http://localhost:3000/user/${userId}` : 'http://localhost:3000/user';
@@ -102,8 +100,9 @@ $(document).ready(function() {
             data: JSON.stringify(employeeData),
             contentType: 'application/json',
             success: function(response) {
-                alert('User saved successfully!');
-                window.location.href = '/pages/dashboard.html'; // Redirect after successful submission
+                // alert('User saved successfully!');
+                window.location.href= 'dashboard.html';
+               
             },
             error: function(xhr, status, error) {
                 console.error('Error saving user:', xhr.responseText);

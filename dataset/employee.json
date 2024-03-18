@@ -13,16 +13,16 @@
       "Start_Date": "2024-03-20"
     },
     {
-      "id": "8cd4",
       "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaVKbSa1QadC1GsXFwQML4kK6JxihiQ4_2n602HKUnQ&s",
-      "Name": "oshi",
+      "Name": "joshi",
       "Notes": "rje",
       "Gender": "male",
       "Department": [
         "HR"
       ],
       "Salary": "60k",
-      "Start_Date": "2024-01-01"
+      "Start_Date": "2024-01-01",
+      "id": "8cd4"
     },
     {
       "id": "237a",
@@ -79,11 +79,37 @@
       "Notes": "bfvne",
       "Gender": "male",
       "Department": [
-        "Finance"
+        "Finance",
+        "Engineer",
+        "Others"
       ],
       "Salary": "50k",
       "Start_Date": "2024-03-06",
       "id": "2cc6"
+    },
+    {
+      "id": "1d29",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaVKbSa1QadC1GsXFwQML4kK6JxihiQ4_2n602HKUnQ&s",
+      "Name": "chandra",
+      "Notes": "gvbr",
+      "Gender": "male",
+      "Department": [
+        "Finance"
+      ],
+      "Salary": "40k",
+      "Start_Date": "2024-03-13"
+    },
+    {
+      "profile": "https://i.ibb.co/fqkrR0k/kilua.jpg",
+      "Name": "Deepak",
+      "Notes": "bvfnd",
+      "Gender": "male",
+      "Department": [
+        "HR"
+      ],
+      "Salary": "30k",
+      "Start_Date": "2024-03-19",
+      "id": "dfa3"
     }
   ]
 }
